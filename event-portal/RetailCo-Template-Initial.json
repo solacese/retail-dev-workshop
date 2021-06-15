@@ -1,0 +1,358 @@
+{
+  "applicationDomains": [
+    {
+      "createdTime": 1623769577760,
+      "updatedTime": 1623777202061,
+      "createdBy": "zpfsf1x4t29",
+      "changedBy": "zpfsf1x4t29",
+      "id": "pibd5hs736p",
+      "name": "RetailCo-Template-Initial",
+      "topicDomain": "",
+      "description": "<p>Event model for the core operations of Retail Co, the world's premier retailer.</p>",
+      "enforceUniqueTopicNames": true,
+      "schemas": [
+        {
+          "createdTime": 1623776536868,
+          "updatedTime": 1623776536868,
+          "createdBy": "zpfsf1x4t29",
+          "changedBy": "zpfsf1x4t29",
+          "id": "djbb9dvoa1u",
+          "name": "OrderCreated",
+          "shared": false,
+          "description": "<p>This schema models an OrderCreated event.</p>",
+          "contentType": "JSON",
+          "content": "{\n  \"definitions\": {},\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"http://example.com/root.json\",\n  \"type\": \"object\",\n  \"title\": \"The Root Schema\",\n  \"required\": [\n    \"id\",\n    \"type\",\n    \"channel\",\n    \"totalPrice\",\n    \"timestamp\"\n  ],\n  \"properties\": {\n    \"id\": {\n      \"$id\": \"#/properties/id\",\n      \"type\": \"string\",\n      \"title\": \"The id schema\"\n    },\n        \"type\": {\n      \"$id\": \"#/properties/type\",\n      \"type\": \"string\",\n      \"title\": \"The type schema\"\n    },\n        \"channel\": {\n      \"$id\": \"#/properties/channel\",\n      \"type\": \"string\",\n      \"title\": \"The channel schema\"\n    },\n        \"totalPrice\": {\n      \"$id\": \"#/properties/totalPrice\",\n      \"type\": \"string\",\n      \"title\": \"The totalPrice schema\"\n    },\n    \"timestamp\": {\n      \"$id\": \"#/properties/timestamp\",\n      \"type\": \"string\",\n      \"title\": \"The timestamp schema\"\n    }\n  }\n}\n\t\t",
+          "applicationDomainId": "pibd5hs736p",
+          "revisionNumber": 1,
+          "versions": [],
+          "type": "schema"
+        },
+        {
+          "createdTime": 1623776606725,
+          "updatedTime": 1623776606725,
+          "createdBy": "zpfsf1x4t29",
+          "changedBy": "zpfsf1x4t29",
+          "id": "squdpoirth7",
+          "name": "PaperOrderValidated",
+          "shared": false,
+          "description": "<p>This schema models a PaperOrderValidated event.</p>",
+          "contentType": "JSON",
+          "content": "{\n  \"definitions\": {},\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"http://example.com/root.json\",\n  \"type\": \"object\",\n  \"title\": \"The Root Schema\",\n  \"required\": [\n    \"id\",\n    \"type\",\n    \"channel\",\n    \"validationStatus\",\n    \"totalPrice\",\n    \"timestamp\"\n  ],\n  \"properties\": {\n    \"id\": {\n      \"$id\": \"#/properties/id\",\n      \"type\": \"string\",\n      \"title\": \"The id schema\"\n    },\n    \"type\": {\n      \"$id\": \"#/properties/type\",\n      \"type\": \"string\",\n      \"title\": \"The type schema\"\n    },\n    \"channel\": {\n      \"$id\": \"#/properties/channel\",\n      \"type\": \"string\",\n      \"title\": \"The channel schema\"\n    },\n        \"validationStatus\": {\n      \"$id\": \"#/properties/validationStatus\",\n      \"type\": \"string\",\n      \"title\": \"The validationStatus schema\"\n    },\n    \"totalPrice\": {\n      \"$id\": \"#/properties/totalPrice\",\n      \"type\": \"string\",\n      \"title\": \"The totalPrice schema\"\n    },\n    \"timestamp\": {\n      \"$id\": \"#/properties/timestamp\",\n      \"type\": \"string\",\n      \"title\": \"The timestamp schema\"\n    }\n  }\n}",
+          "applicationDomainId": "pibd5hs736p",
+          "revisionNumber": 1,
+          "versions": [],
+          "type": "schema"
+        }
+      ],
+      "events": [
+        {
+          "createdTime": 1623769625468,
+          "updatedTime": 1623777048862,
+          "createdBy": "zpfsf1x4t29",
+          "changedBy": "zpfsf1x4t29",
+          "id": "a9fynyt85xf",
+          "name": "OrderCreated",
+          "version": "0.0.1",
+          "shared": false,
+          "description": "<p>This is the model for the OrderCreated event.</p>",
+          "schemaId": "djbb9dvoa1u",
+          "schemaVersionId": null,
+          "keySchemaId": null,
+          "keySchemaVersionId": null,
+          "applicationDomainId": "pibd5hs736p",
+          "revisionNumber": 2,
+          "keyPrimitivePayloadType": null,
+          "valuePrimitivePayloadType": null,
+          "topicAddress": {
+            "id": "gts5asz22fd",
+            "virtualBrokerId": "cca3h8tbboc",
+            "topicAddressLevels": [
+              {
+                "id": "uvz8qdscjfs",
+                "consumable": false,
+                "name": "retailco",
+                "displayName": "retailco",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "00rig1bx0gz",
+                "consumable": false,
+                "name": "order",
+                "displayName": "order",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "0xpv390pie5",
+                "consumable": false,
+                "name": "create",
+                "displayName": "create",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "42ggi35qbxd",
+                "consumable": false,
+                "name": "v1",
+                "displayName": "v1",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "oz8cn7h6q10",
+                "consumable": false,
+                "name": "Channel",
+                "displayName": "Channel",
+                "enumId": "f98cl1l9ok2",
+                "topicNodeType": "variable",
+                "type": "topicNode"
+              },
+              {
+                "id": "bcxozlv8bmo",
+                "consumable": true,
+                "name": "OrderType",
+                "displayName": "OrderType",
+                "enumId": "5daqgjdd17t",
+                "topicNodeType": "variable",
+                "type": "topicNode"
+              }
+            ],
+            "type": "topicAddress"
+          },
+          "type": "event"
+        },
+        {
+          "createdTime": 1623769633012,
+          "updatedTime": 1623777012242,
+          "createdBy": "zpfsf1x4t29",
+          "changedBy": "zpfsf1x4t29",
+          "id": "h7obmktqobw",
+          "name": "PaperOrderValidated",
+          "version": "0.0.1",
+          "shared": false,
+          "description": "<p>This model represents a PaperOrderValidated event.</p>",
+          "schemaId": "squdpoirth7",
+          "schemaVersionId": null,
+          "keySchemaId": null,
+          "keySchemaVersionId": null,
+          "applicationDomainId": "pibd5hs736p",
+          "revisionNumber": 2,
+          "keyPrimitivePayloadType": null,
+          "valuePrimitivePayloadType": null,
+          "topicAddress": {
+            "id": "sleqy4ghqv5",
+            "virtualBrokerId": "cca3h8tbboc",
+            "topicAddressLevels": [
+              {
+                "id": "uvz8qdscjfs",
+                "consumable": false,
+                "name": "retailco",
+                "displayName": "retailco",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "00rig1bx0gz",
+                "consumable": false,
+                "name": "order",
+                "displayName": "order",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "2g2wbt475kz",
+                "consumable": false,
+                "name": "update",
+                "displayName": "update",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "p41cl91k6rs",
+                "consumable": false,
+                "name": "validated",
+                "displayName": "validated",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "5f0qlreaiif",
+                "consumable": false,
+                "name": "v1",
+                "displayName": "v1",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "im2h7zj0dgw",
+                "consumable": false,
+                "name": "B2C",
+                "displayName": "B2C",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              },
+              {
+                "id": "3y8fvfa4y0c",
+                "consumable": true,
+                "name": "paper",
+                "displayName": "paper",
+                "description": "",
+                "children": [],
+                "topicNodeType": "literal",
+                "type": "topicNode"
+              }
+            ],
+            "type": "topicAddress"
+          },
+          "type": "event"
+        }
+      ],
+      "applications": [
+        {
+          "createdTime": 1623769608047,
+          "updatedTime": 1623769653535,
+          "createdBy": "zpfsf1x4t29",
+          "changedBy": "zpfsf1x4t29",
+          "id": "ccvez6g2rah",
+          "name": "CDC",
+          "version": "0.0.1",
+          "description": "",
+          "applicationDomainId": "pibd5hs736p",
+          "producedEventIds": [
+            "a9fynyt85xf"
+          ],
+          "consumedEventIds": [],
+          "revisionNumber": 2,
+          "applicationClass": "unspecified",
+          "endpoints": [],
+          "type": "application"
+        },
+        {
+          "createdTime": 1623769613184,
+          "updatedTime": 1623769754987,
+          "createdBy": "zpfsf1x4t29",
+          "changedBy": "zpfsf1x4t29",
+          "id": "u16s8w13s8y",
+          "name": "OrderValidationProcessor",
+          "version": "0.0.1",
+          "description": "",
+          "applicationDomainId": "pibd5hs736p",
+          "producedEventIds": [
+            "h7obmktqobw"
+          ],
+          "consumedEventIds": [
+            "a9fynyt85xf"
+          ],
+          "revisionNumber": 4,
+          "applicationClass": "unspecified",
+          "endpoints": [],
+          "type": "application"
+        },
+        {
+          "createdTime": 1623769619439,
+          "updatedTime": 1623769748856,
+          "createdBy": "zpfsf1x4t29",
+          "changedBy": "zpfsf1x4t29",
+          "id": "dj7e1a1y4s2",
+          "name": "PaperOrderConsumer",
+          "version": "0.0.1",
+          "description": "",
+          "applicationDomainId": "pibd5hs736p",
+          "producedEventIds": [],
+          "consumedEventIds": [
+            "h7obmktqobw"
+          ],
+          "revisionNumber": 2,
+          "applicationClass": "unspecified",
+          "endpoints": [],
+          "type": "application"
+        }
+      ],
+      "type": "applicationDomain"
+    }
+  ],
+  "virtualBrokers": [
+    {
+      "createdTime": 1623776698648,
+      "updatedTime": 1623776698648,
+      "createdBy": "zpfsf1x4t29",
+      "changedBy": "zpfsf1x4t29",
+      "id": "cca3h8tbboc",
+      "name": "TemplateInitial",
+      "description": "",
+      "brokerType": "solace",
+      "levelDelimiter": "/",
+      "topicNodes": [],
+      "type": "virtualBroker"
+    }
+  ],
+  "topicValueSets": [
+    {
+      "createdTime": 1623776832117,
+      "updatedTime": 1623776832117,
+      "createdBy": "zpfsf1x4t29",
+      "changedBy": "zpfsf1x4t29",
+      "id": "f98cl1l9ok2",
+      "description": "",
+      "name": "Channel",
+      "values": [
+        {
+          "displayName": "B2C",
+          "value": "B2C",
+          "type": "enumItem"
+        },
+        {
+          "displayName": "B2B",
+          "value": "B2B",
+          "type": "enumItem"
+        }
+      ],
+      "type": "enum"
+    },
+    {
+      "createdTime": 1623776865496,
+      "updatedTime": 1623777044610,
+      "createdBy": "zpfsf1x4t29",
+      "changedBy": "zpfsf1x4t29",
+      "id": "5daqgjdd17t",
+      "description": "",
+      "name": "OrderType",
+      "values": [
+        {
+          "displayName": "paper",
+          "value": "paper",
+          "type": "enumItem"
+        },
+        {
+          "displayName": "furniture",
+          "value": "furniture",
+          "type": "enumItem"
+        }
+      ],
+      "type": "enum"
+    }
+  ],
+  "formatVersion": "1",
+  "type": "ApplicationDomainExport"
+}
